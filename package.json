@@ -1,22 +1,37 @@
 {
-  "name": "clean-node-api",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/LCARREIRO/clean-node-api.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/LCARREIRO/clean-node-api/issues"
-  },
-  "homepage": "https://github.com/LCARREIRO/clean-node-api#readme",
-  "dependencies": {
-    "standard": "^16.0.3"
-  }
+    "name": "clean-node-api",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "lint-staged": {
+        "*.js": [
+            "standard --fix",
+            "git add"
+        ]
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/LCARREIRO/clean-node-api.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/LCARREIRO/clean-node-api/issues"
+    },
+    "homepage": "https://github.com/LCARREIRO/clean-node-api#readme",
+    "dependencies": {
+        "husky": "^6.0.0",
+        "standard": "^16.0.3"
+    },
+    "devDependencies": {
+        "lint-staged": "^11.0.0"
+    }
 }
