@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/LCARREIRO/clean-node-api/issues"
   },
-  "homepage": "https://github.com/LCARREIRO/clean-node-api#readme"
+  "homepage": "https://github.com/LCARREIRO/clean-node-api#readme",
+  "dependencies": {
+    "standard": "^16.0.3"
+  }
 }
